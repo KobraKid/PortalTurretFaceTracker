@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FaceTrackingController">
+	<children>
+		<ToolBar fx:id="titleBar" VBox.vgrow="NEVER">
+			<items>
+				<Pane maxHeight="0.0" minHeight="0.0" prefHeight="0.0" HBox.hgrow="ALWAYS" />
+            <Pane styleClass="image-view-wrapper">
+               <children>
+                  <ImageView fx:id="minimize" fitHeight="16.0" fitWidth="16.0" onMouseClicked="#onMinimize" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Pane styleClass="image-view-wrapper">
+               <children>
+                  <ImageView fx:id="maximize" fitHeight="16.0" fitWidth="16.0" onMouseClicked="#onMaximize" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Pane styleClass="image-view-wrapper">
+               <children>
+                  <ImageView fx:id="close" fitHeight="16.0" fitWidth="16.0" onMouseClicked="#onStop" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+			</items>
+		</ToolBar>
+		<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="16.0">
+			<children>
+				<VBox alignment="CENTER" spacing="16.0">
+					<children>
+						<ImageView fx:id="currentFrame" fitHeight="480.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+							<VBox.margin>
+								<Insets />
+							</VBox.margin>
+						</ImageView>
+						<Button fx:id="cameraButton" mnemonicParsing="false" onAction="#startCamera" styleClass="camera-button" text="Start Camera" />
+					</children>
+				</VBox>
+				<VBox alignment="TOP_RIGHT">
+					<children>
+						<Label text="Sound Mix">
+							<VBox.margin>
+								<Insets bottom="16.0" top="16.0" />
+							</VBox.margin>
+						</Label>
+						<ComboBox fx:id="soundComboBox" prefWidth="240.0" promptText="Choose a sound..." styleClass="sound-picker" />
+						<HBox alignment="TOP_RIGHT">
+							<children>
+								<Button fx:id="playButton" mnemonicParsing="false" onAction="#playSound" styleClass="play-button" text="||&gt;" />
+								<ProgressBar fx:id="progressBar" prefHeight="32.0" prefWidth="200.0" progress="0.0" />
+							</children>
+						</HBox>
+						<Slider fx:id="volumeSlider">
+							<VBox.margin>
+								<Insets top="8.0" />
+							</VBox.margin>
+						</Slider>
+						<Separator prefWidth="200.0">
+							<VBox.margin>
+								<Insets top="16.0" />
+							</VBox.margin>
+						</Separator>
+						<Label text="Face Tracking">
+							<VBox.margin>
+								<Insets bottom="16.0" top="16.0" />
+							</VBox.margin>
+						</Label>
+						<HBox alignment="CENTER">
+							<children>
+								<ToggleButton fx:id="noFace" mnemonicParsing="false" onAction="#toggleFaceDetection" prefWidth="75.0" selected="true" text="OFF" />
+								<ToggleButton fx:id="haarFace" mnemonicParsing="false" onAction="#toggleFaceDetection" prefWidth="75.0" text="HAAR" />
+								<ToggleButton fx:id="lbpFace" mnemonicParsing="false" onAction="#toggleFaceDetection" prefWidth="75.0" text="LBP" />
+							</children>
+							<VBox.margin>
+								<Insets />
+							</VBox.margin>
+						</HBox>
+						<Separator prefWidth="200.0">
+							<VBox.margin>
+								<Insets top="16.0" />
+							</VBox.margin>
+						</Separator>
+						<Label fx:id="coordLabel" disable="true" text="Facial Coordinates">
+							<VBox.margin>
+								<Insets top="16.0" />
+							</VBox.margin>
+						</Label>
+						<HBox fx:id="coordBox" alignment="CENTER" disable="true" prefWidth="200.0" spacing="10.0">
+							<children>
+								<Label text="X" />
+								<TextField alignment="CENTER" editable="false" prefWidth="80.0" styleClass="coord-box" text="--" fx:id="x" />
+								<Label text="Y" />
+								<TextField fx:id="y" alignment="CENTER" editable="false" prefWidth="80.0" styleClass="coord-box" text="--" />
+							</children>
+							<padding>
+								<Insets top="16.0" />
+							</padding>
+						</HBox>
+						<Separator prefWidth="200.0">
+							<opaqueInsets>
+								<Insets />
+							</opaqueInsets>
+							<padding>
+								<Insets top="16.0" />
+							</padding>
+						</Separator>
+                  <TextArea fx:id="logBox" editable="false" maxHeight="160.0" maxWidth="240.0">
+                     <font>
+                        <Font name="Consolas" size="11.0" />
+                     </font></TextArea>
+                  <Label fx:id="serialPort" styleClass="serial-port" text="Label">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Consolas" size="9.0" />
+                     </font>
+                  </Label>
+					</children>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+				</VBox>
+			</children>
+			<padding>
+				<Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+			</padding>
+		</HBox>
+	</children>
+</VBox>

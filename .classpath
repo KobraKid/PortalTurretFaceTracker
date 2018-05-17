@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="PortalTurretFaceTracker/resources"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<accessrules>
+			<accessrule kind="accessible" pattern="gnu/io/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/OpenCV"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER">
+		<accessrules>
+			<accessrule kind="accessible" pattern="gnu/io/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="D:/Projects/PortalTurretFaceTracker/resources/sphinx4/sphinx4-core-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Projects/PortalTurretFaceTracker/resources/sphinx4/sphinx4-data-1.0.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

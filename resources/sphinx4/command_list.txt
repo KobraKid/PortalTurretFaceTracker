@@ -1,0 +1,17 @@
+command
+shutdown
+activate
+toggle
+autopilot
+search
+retire
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+oh

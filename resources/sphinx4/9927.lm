@@ -1,0 +1,93 @@
+Language model created by QuickLM on Sat Jul 22 18:41:05 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 17 sentences and 19 words
+
+\data\
+ngram 1=19
+ngram 2=34
+ngram 3=17
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-2.0086 ACTIVATE -0.2218
+-2.0086 AUTOPILOT -0.2218
+-2.0086 COMMAND -0.2218
+-2.0086 EIGHT -0.2218
+-2.0086 FIVE -0.2218
+-2.0086 FOUR -0.2218
+-2.0086 NINE -0.2218
+-2.0086 OH -0.2218
+-2.0086 ONE -0.2218
+-2.0086 RETIRE -0.2218
+-2.0086 SEARCH -0.2218
+-2.0086 SEVEN -0.2218
+-2.0086 SHUTDOWN -0.2218
+-2.0086 SIX -0.2218
+-2.0086 THREE -0.2218
+-2.0086 TOGGLE -0.2218
+-2.0086 TWO -0.2218
+
+\2-grams:
+-1.5315 <s> ACTIVATE 0.0000
+-1.5315 <s> AUTOPILOT 0.0000
+-1.5315 <s> COMMAND 0.0000
+-1.5315 <s> EIGHT 0.0000
+-1.5315 <s> FIVE 0.0000
+-1.5315 <s> FOUR 0.0000
+-1.5315 <s> NINE 0.0000
+-1.5315 <s> OH 0.0000
+-1.5315 <s> ONE 0.0000
+-1.5315 <s> RETIRE 0.0000
+-1.5315 <s> SEARCH 0.0000
+-1.5315 <s> SEVEN 0.0000
+-1.5315 <s> SHUTDOWN 0.0000
+-1.5315 <s> SIX 0.0000
+-1.5315 <s> THREE 0.0000
+-1.5315 <s> TOGGLE 0.0000
+-1.5315 <s> TWO 0.0000
+-0.3010 ACTIVATE </s> -0.3010
+-0.3010 AUTOPILOT </s> -0.3010
+-0.3010 COMMAND </s> -0.3010
+-0.3010 EIGHT </s> -0.3010
+-0.3010 FIVE </s> -0.3010
+-0.3010 FOUR </s> -0.3010
+-0.3010 NINE </s> -0.3010
+-0.3010 OH </s> -0.3010
+-0.3010 ONE </s> -0.3010
+-0.3010 RETIRE </s> -0.3010
+-0.3010 SEARCH </s> -0.3010
+-0.3010 SEVEN </s> -0.3010
+-0.3010 SHUTDOWN </s> -0.3010
+-0.3010 SIX </s> -0.3010
+-0.3010 THREE </s> -0.3010
+-0.3010 TOGGLE </s> -0.3010
+-0.3010 TWO </s> -0.3010
+
+\3-grams:
+-0.3010 <s> ACTIVATE </s>
+-0.3010 <s> AUTOPILOT </s>
+-0.3010 <s> COMMAND </s>
+-0.3010 <s> EIGHT </s>
+-0.3010 <s> FIVE </s>
+-0.3010 <s> FOUR </s>
+-0.3010 <s> NINE </s>
+-0.3010 <s> OH </s>
+-0.3010 <s> ONE </s>
+-0.3010 <s> RETIRE </s>
+-0.3010 <s> SEARCH </s>
+-0.3010 <s> SEVEN </s>
+-0.3010 <s> SHUTDOWN </s>
+-0.3010 <s> SIX </s>
+-0.3010 <s> THREE </s>
+-0.3010 <s> TOGGLE </s>
+-0.3010 <s> TWO </s>
+
+\end\

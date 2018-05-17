@@ -1,0 +1,87 @@
+.root {
+	-fx-background-color: black;
+}
+
+.camera-button {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-background-color: #B59208;
+	-fx-border-radius: 10.0;
+	-fx-background-radius: 10.0;
+	-fx-padding: 15.0;
+}
+
+.play-button {
+	-fx-text-fill: black;
+	-fx-background-color: white;
+}
+
+.label {
+	-fx-text-fill: #B59208;
+	-fx-font-size: 16.0px;
+}
+
+.serial-port {
+	-fx-font-size: 12.0px;
+}
+
+.line {
+	-fx-border-color: #B59208;
+}
+
+.progress-bar .bar {
+	-fx-background-color: #5EDDFB;
+}
+
+.coord-box {
+	-fx-font-size: 16.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
+.combo-box .list-cell {
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-border-color: rgb(64.0, 64.0, 64.0);
+	-fx-border-width: 1.0px;
+	-fx-padding: 3.0 0.0 2.0 7.0;
+	-fx-cell-size: 1.66667em;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+	-fx-background-color: #EE7F1B;
+	-fx-text-fill: black;
+}
+
+.toggle-button {
+	-fx-font-size: 16.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
+.toggle-button:selected, .toggle-button:selected:focused {
+	-fx-background-color: #B59208;
+	-fx-text-fill: black;
+}
+
+.tool-bar {
+	-fx-background-color: rgb(64.0, 64.0, 64.0);
+}
+
+.text-area {
+	-fx-border-color: rgb(64.0, 64.0, 64.0);
+	-fx-text-fill: #EE7F1B;
+}
+
+.text-area .content {
+	-fx-border-color: rgb(64.0, 64.0, 64.0);
+	-fx-background-color: black;
+}
+
+.text-area .scroll-pane {
+	-fx-border-color: rgb(64.0, 64.0, 64.0);
+	-fx-vbar-policy: never;
+	-fx-hbar-policy: never;
+}
